@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Control de Proveedores y Marcas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Control de Proveedores y Marcas</h1>
+
+    <section>
+        <h2>Agregar Proveedor</h2>
+        <input id="proveedorNombre" placeholder="Nombre del proveedor">
+        <input id="proveedorContacto" placeholder="Contacto (opcional)">
+        <button onclick="agregarProveedor()">Agregar proveedor</button>
+
+        <h3>Lista de proveedores</h3>
+        <ul id="listaProveedores"></ul>
+    </section>
+
+    <section>
+        <h2>Agregar Marca</h2>
+        <input id="marcaNombre" placeholder="Nombre de la marca">
+        <select id="marcaProveedor"></select>
+        <button onclick="agregarMarca()">Agregar marca</button>
+
+        <h3>Lista de marcas</h3>
+        <ul id="listaMarcas"></ul>
+    </section>
+
+<script src="app.js"></script>
+</body>
+</html>
